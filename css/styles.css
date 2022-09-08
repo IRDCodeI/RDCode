@@ -221,17 +221,21 @@ label > a{
 */
 
 .container__tech--flex{
+    width: 90vw;
     display: flex;
     flex-direction: column;
-    gap: 40px ;
+    gap: 40px;
+    flex-shrink: 4;
+    align-items: center;
 }
 
 .container__techs{
+    width: 70%;
     display: flex;
     position: static;
     justify-content: space-evenly;
     flex-wrap: wrap;
-    gap: 20px 15px;
+    gap: 20px 60px;
 }
 
 .container__techs__type{
@@ -358,7 +362,7 @@ body::-webkit-scrollbar-track {
 /* Mobile */
 
 
-@media (max-width: 600px) {
+@media (max-width: 720px) {
 
     .nav__block{
         display: flex;
@@ -379,5 +383,15 @@ body::-webkit-scrollbar-track {
         width: 300px;
         height: auto;
     }
+
+    .container__techs{
+        width: 100%;
+        display: flex;
+        position: static;
+        justify-content: space-evenly;
+        flex-wrap: wrap;
+        gap: 20px 20px;
+    }
+    
   }
   
