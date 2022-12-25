@@ -20,7 +20,7 @@ function Nav(){
     const handleThemeSwitch = () => setTheme(theme === 'dark' ? 'light' : 'dark');
 
     return(
-            <nav className="w-9/12  m-4 p-2 flex flex-row justify-between items-center bg-slate-100 border-solid border-2 rounded-xl dark:bg-gray-700">
+            <nav className="w-9/12  m-4 py-3 px-12 flex flex-row justify-between items-center bg-slate-100 border-solid border-2 rounded-xl dark:bg-gray-700">
                 <div className="p-1 justify-between items-center flex flex-row">
                     <BsLaptop color={theme === 'light'? 'black':'white'} fontSize="1.9rem"/>
                     <span className='ml-3 text-2xl font-kanit dark:text-white'>RDCode</span></div>
