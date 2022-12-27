@@ -22,7 +22,7 @@ function Nav(){
     return(
             <nav className="w-9/12  m-4 py-3 px-12 flex flex-row justify-between items-center 
                 bg-white rounded-md bg-clip-padding backdrop-filter backdrop-blur-md bg-opacity-60 border border-gray-100 
-                dark:bg-gray-800">
+                dark:bg-gray-800 dark:border-gray-600">
                 <div className="p-1 justify-between items-center flex flex-row">
                     <BsLaptop color={theme === 'light'? 'black':'white'} fontSize="1.9rem"/>
                     <span className='ml-3 text-2xl font-kanit dark:text-white'>RDCode</span></div>

@@ -17,7 +17,8 @@ module.exports = {
       },
       backgroundImage: {
         'hero': "url(/images/bg-hero.jpg)",
-        'rdcode': 'url(/images/RDCode.jpg)'
+        'rdcode': 'url(/images/RDCode.jpg)',
+        'empty': 'url(/images/empty.jpg)',
       }
     },
   },
