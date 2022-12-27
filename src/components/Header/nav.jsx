@@ -20,7 +20,9 @@ function Nav(){
     const handleThemeSwitch = () => setTheme(theme === 'dark' ? 'light' : 'dark');
 
     return(
-            <nav className="w-9/12  m-4 py-3 px-12 flex flex-row justify-between items-center bg-slate-100 border-solid border-2 rounded-xl dark:bg-gray-700">
+            <nav className="w-9/12  m-4 py-3 px-12 flex flex-row justify-between items-center 
+                bg-white rounded-md bg-clip-padding backdrop-filter backdrop-blur-md bg-opacity-60 border border-gray-100 
+                dark:bg-gray-800">
                 <div className="p-1 justify-between items-center flex flex-row">
                     <BsLaptop color={theme === 'light'? 'black':'white'} fontSize="1.9rem"/>
                     <span className='ml-3 text-2xl font-kanit dark:text-white'>RDCode</span></div>
@@ -37,7 +39,7 @@ function Nav(){
                                 peer-focus:outline-none peer-focus:ring-2 peer-focus:ring-blue-300 dark:peer-focus:ring-slate-300 rounded-full 
                                 peer dark:bg-slate-400 peer-checked:after:translate-x-full peer-checked:after:border-white 
                                 after:content-[''] after:absolute after:top-[4px] after:left-[2px] after:bg-white after:border-gray-300 after:border after:rounded-full after:h-5 after:w-5 after:transition-all
-                                 dark:border-gray-600 peer-checked:bg-gray-800"></div>                        
+                                 dark:border-gray-600 peer-checked:bg-gray-900"></div>                        
                         </label>                     
                     </ul>                 
                     <div className="inline-block md:hidden"><GiHamburgerMenu/></div>

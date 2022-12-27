@@ -1,9 +1,11 @@
-import Home from "./home/home"
+import Home from "./ui/home"
 
 function App() {
 
   return (
-      <Home/>
+      <>
+        <Home/>
+      </>
   )
 }
 

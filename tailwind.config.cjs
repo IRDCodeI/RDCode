@@ -16,7 +16,8 @@ module.exports = {
         'nunito-sans': 'Nunito',
       },
       backgroundImage: {
-        'hero': "url(/images/bg-hero.jpg)"
+        'hero': "url(/images/bg-hero.jpg)",
+        'rdcode': 'url(/images/RDCode.jpg)'
       }
     },
   },
