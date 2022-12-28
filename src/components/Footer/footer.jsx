@@ -4,7 +4,7 @@ import {BsLinkedin, BsTelegram, BsGithub, BsLaptop} from 'react-icons/bs'
 function Footer(){
     return(
         <>
-            <footer className='bg-slate-900'>
+            <footer className='md:block bg-slate-900'>
                 <div className='py-10 flex flex-row justify-evenly items-center '>
                     <div className='w-96 bg-white h-px'></div>
                     <div className='w-60 h-auto flex flex-row justify-around'>

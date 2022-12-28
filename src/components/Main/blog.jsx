@@ -1,7 +1,7 @@
 function Blog(){
     return(
         <>
-            <div className="p-14 bg-slate-100 dark:bg-gray-600">
+            <div className="hidden p-14 bg-slate-100 dark:bg-gray-600">
                 <div className="flex flex-col">
                     <h3 className="text-5xl font-bold dark:text-white">Blog</h3>
                     <span className="w-64 h-1 mt-5 bg-gradient-to-r from-gray-900 to-transparent dark:bg-gradient-to-r dark:from-slate-100"></span>
