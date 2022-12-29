@@ -1,3 +1,4 @@
+import Menu from './menu'
 import {GiHamburgerMenu} from 'react-icons/gi'
 import {BsLaptop} from 'react-icons/bs'
 import { useState } from 'react';

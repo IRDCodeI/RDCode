@@ -4,7 +4,7 @@ function About (){
         <>
             <div className="py-10 md:px-16 md:py-20 flex flex-col space-y-8 md:space-y-0 md:flex-row md:justify-evenly md:items-center bg-slate-100 dark:bg-gray-600">
                 <div className=" md:my-10 md:mx-28 flex flex-col w-full items-center">
-                    <h3 className="md:mb-5 text-5xl text-center md:text-start font-bold dark:text-white">RDCode</h3>
+                    <h3 className="w-full md:pl-8 md:mb-5 text-5xl text-center md:text-left font-bold dark:text-white">RDCode</h3>
                     <span className="w-52 m-4 self-start inline-block md:mb-20 md:w-60 h-1 bg-gradient-to-r from-gray-900 to-transparent
                         dark:bg-gradient-to-r dark:from-slate-100"></span>
                     <span className="relative -top-5 right-3 w-52 md:hidden self-end rotate-180 inline-block md:mb-20 md:w-60 h-1 bg-gradient-to-r from-gray-900 to-transparent
@@ -18,7 +18,7 @@ function About (){
                     además he encontrado una nueva pasión por la inteligencia artificial por lo que actualmente me encuentro 
                     desarrollando mis habilidades en dicho campo tecnológico.
                 </p>
-                <button className="w-48 h-12 border boder-solid bg-slate-800 text-white font-semibold text-center rounded-xl text-xl
+                <button className="w-48 h-12 border border-solid bg-slate-800 text-white font-semibold text-center rounded-xl text-xl
                 dark:bg-white dark:text-gray-700">Contactar</button>
                 </div>
             </div>

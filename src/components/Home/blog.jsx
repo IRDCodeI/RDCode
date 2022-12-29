@@ -6,7 +6,7 @@ function Blog(){
                     <h3 className="text-5xl font-bold dark:text-white">Blog</h3>
                     <span className="w-64 h-1 mt-5 bg-gradient-to-r from-gray-900 to-transparent dark:bg-gradient-to-r dark:from-slate-100"></span>
                 </div>
-                <div className="w-auto m-10 p-5 flex flex-row justify-around">
+                <div className="m-5 p-2 w-auto md:m-10 md:p-5 flex flex-row justify-around">
                     <div className="w-fit bg-slate-300 border rounded-xl dark:bg-gray-700 dark:border-gray-500">
                         <div className="w-80 h-60 bg-empty bg-contain bg-center"></div>
                         <div className="p-4 flex flew-row space-x-6">
@@ -37,6 +37,13 @@ function Blog(){
                             </div>
                         </div>
                     </div>
+                </div>
+                <div className="flex flex-row items-center justify-center space-x-2">
+                    <span className="w-3 h-3 rounded-full bg-slate-500 dark:bg-slate-300"></span>
+                    <span className="w-4 h-4 rounded-full bg-slate-700 dark:bg-slate-100"></span>
+                    <span className="w-3 h-3 rounded-full bg-slate-500 dark:bg-slate-300"></span>
+                    <span className="w-3 h-3 rounded-full bg-slate-500 dark:bg-slate-300"></span>
+                    <span className="w-3 h-3 rounded-full bg-slate-500 dark:bg-slate-300"></span>
                 </div>                
             </div>
         </>
