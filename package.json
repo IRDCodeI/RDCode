@@ -9,6 +9,7 @@
     "preview": "vite preview"
   },
   "dependencies": {
+    "@reduxjs/toolkit": "^1.9.1",
     "autoprefixer": "^10.4.13",
     "gsap": "^3.11.4",
     "localforage": "^1.10.0",

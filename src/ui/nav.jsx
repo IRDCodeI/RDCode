@@ -8,6 +8,7 @@ function Nav(){
 
     // Almacenar estado de dark-mode en base de datos "Redis" 
     const [theme, setTheme] = useState('light')
+    const [hidden, setHidden] = useState(false)
 
     useEffect(
         () => {
@@ -19,8 +20,10 @@ function Nav(){
         }, [theme]);
 
     const handleThemeSwitch = () => setTheme(theme === 'dark' ? 'light' : 'dark');
+    const handleMenuSwitch = () => setHidden(hidden == true ? false : true);
 
     return(
+        <>
             <nav className="w-11/12 p-2 md:p-0 md:w-9/12 md:m-4 md:py-3 md:px-12 flex flex-row justify-around space-x-20 md:justify-between items-center
                 bg-white rounded-md bg-clip-padding backdrop-filter backdrop-blur-md bg-opacity-60 border border-gray-100 
                 dark:bg-gray-800 dark:border-gray-600">
@@ -45,9 +48,11 @@ function Nav(){
                                  dark:border-gray-600 peer-checked:bg-gray-900"></div>                        
                         </label>                     
                     </ul>                 
-                    <div className="block md:hidden"><GiHamburgerMenu fontSize={'1.9rem'}/></div>
+                    <div className="block md:hidden" onClick={handleMenuSwitch}><GiHamburgerMenu color={theme === 'light'? 'black':'white'} fontSize={'1.9rem'}/></div>
                 </div>
             </nav>
+            {hidden? <Menu handleMenu={handleMenuSwitch}/> : <></>}
+        </>
     )
 }
 
