@@ -45,13 +45,14 @@ function Nav(){
                                 peer-focus:outline-none peer-focus:ring-2 peer-focus:ring-blue-300 dark:peer-focus:ring-slate-300 rounded-full 
                                 peer dark:bg-slate-400 peer-checked:after:translate-x-full peer-checked:after:border-white 
                                 after:content-[''] after:absolute after:top-[4px] after:left-[2px] after:bg-white after:border-gray-300 after:border after:rounded-full after:h-5 after:w-5 after:transition-all
-                                 dark:border-gray-600 peer-checked:bg-gray-900"></div>                        
+                                 dark:border-gray-600 peer-checked:bg-gray-900">
+                            </div>                        
                         </label>                     
                     </ul>                 
                     <div className="block md:hidden" onClick={handleMenuSwitch}><GiHamburgerMenu color={theme === 'light'? 'black':'white'} fontSize={'1.9rem'}/></div>
                 </div>
             </nav>
-            {hidden? <Menu handleMenu={handleMenuSwitch}/> : <></>}
+            {hidden? <Menu darkMode={theme} handleMenu={handleMenuSwitch} handleTheme={handleThemeSwitch}/> : <></>}
         </>
     )
 }
