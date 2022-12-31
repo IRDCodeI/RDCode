@@ -24,7 +24,7 @@ function Nav(){
 
     return(
         <>
-            <nav className="w-11/12 p-2 md:p-0 md:w-9/12 md:m-4 md:py-3 md:px-12 flex flex-row justify-around space-x-20 md:justify-between items-center
+            <nav className="fixed z-10 w-11/12 p-2 md:p-0 md:w-9/12 md:m-4 md:py-3 md:px-12 flex flex-row justify-around space-x-20 md:justify-between items-center
                 bg-white rounded-md bg-clip-padding backdrop-filter backdrop-blur-md bg-opacity-60 border border-gray-100 
                 dark:bg-gray-800 dark:border-gray-600">
                 <div className="p-1 justify-between items-center flex flex-row">

@@ -9,7 +9,7 @@ function Header(){
                 <header className="py-4 md:py-8 flex flex-col items-center">
                     <Nav/>
                 </header>
-                <div className="h-96 w-auto md:flex md:flex-row md:justify-evenly md:items-center">
+                <div className="mt-14 md:mt-24 h-96 w-auto md:flex md:flex-row md:justify-evenly md:items-center">
                     <div className="flex flex-col items-center">
                         <div className="my-12 mx-3">
                             <h2 className="text-white text-5xl md:text-7xl font-semibold text-center md:text-start">Desarrollador</h2>
