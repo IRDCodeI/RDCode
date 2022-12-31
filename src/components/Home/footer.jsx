@@ -9,9 +9,9 @@ function Footer(){
                     <div className='w-20 md:w-96 bg-white h-px'></div>
                     <div className='space-x-2 md:w-60 h-auto flex flex-row justify-around'>
                         <MdOutlineAlternateEmail fontSize={'2.2rem'} color='white'/>
-                        <BsLinkedin fontSize={'2.2rem'} color='white'/>
-                        <BsTelegram fontSize={'2.2rem'} color='white'/>
-                        <BsGithub fontSize={'2.2rem'} color='white'/>
+                        <a target='_blank' href='https://www.linkedin.com/in/stalin-david-pillajo-masache-2945ba206/'><BsLinkedin fontSize={'2.2rem'} color='white'/></a>
+                        <a target='_blank' href='https://t.me/RDCodev'><BsTelegram fontSize={'2.2rem'} color='white'/></a>
+                        <a target='_blank' href='https://github.com/IRDCodeI'><BsGithub fontSize={'2.2rem'} color='white'/></a>
                     </div>
                     <div className='w-20 md:w-96 bg-white h-px'></div>
                 </div>

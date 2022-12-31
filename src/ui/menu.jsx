@@ -40,10 +40,10 @@ function Menu(props){
                     </div>     
                </div>
                <div className='p-5 space-x-6 md:w-60 h-auto flex flex-row justify-center'>
-                    <MdOutlineAlternateEmail fontSize={'2.3rem'} color={theme === 'light'? 'black':'white'}/>
-                    <BsLinkedin fontSize={'2.3rem'} color={theme === 'light'? 'black':'white'}/>
-                    <BsTelegram fontSize={'2.3rem'} color={theme === 'light'? 'black':'white'}/>
-                    <BsGithub fontSize={'2.3rem'} color={theme === 'light'? 'black':'white'}/>
+                    <a href='#'><MdOutlineAlternateEmail fontSize={'2.3rem'} color={theme === 'light'? 'black':'white'}/></a>
+                    <a href='https://www.linkedin.com/in/stalin-david-pillajo-masache-2945ba206/'><BsLinkedin fontSize={'2.3rem'} color={theme === 'light'? 'black':'white'}/></a>
+                    <a href='https://t.me/RDCodev'><BsTelegram fontSize={'2.3rem'} color={theme === 'light'? 'black':'white'}/></a>
+                    <a href='https://github.com/IRDCodeI'><BsGithub fontSize={'2.3rem'} color={theme === 'light'? 'black':'white'}/></a>
                </div>
           </div>
         </div>
