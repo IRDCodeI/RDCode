@@ -1,7 +1,7 @@
 function Skills(){
     return(
         <>
-            <div className="p-2 md:p-8 bg-gray-100 dark:bg-gray-600 -my-1">
+            <div id="Skills" className="p-2 md:p-8 bg-gray-100 dark:bg-gray-600 -my-1">
                 <div className="p-2 border rounded-3xl border-transparent bg-slate-200 dark:bg-gray-700">
                     <div className="py-10 px-20 flex flex-col md:items-end items-center">
                         <h3 className="text-4xl md:text-5xl font-bold dark:text-white">Habilidades</h3>

@@ -28,11 +28,11 @@ function Menu(props){
                     <h3 className='font-kanit text-5xl dark:text-white'>RDCode</h3>
                     <div className='w-full px-10'>
                          <ul className='flex flex-col space-y-1.5'>
-                              <li className='text-lg px-4 dark:text-white'>Inicio</li>
+                              <li className='text-lg px-4 dark:text-white'><a onClick={props.handleMenu} href='#Home'>Inicio</a></li>
                               <hr/>
-                              <li className='text-lg px-4 dark:text-white'>Habilidades</li>
+                              <li className='text-lg px-4 dark:text-white'><a onClick={props.handleMenu} href='#Skills'>Habilidades</a></li>
                               <hr/>
-                              <li className='text-lg px-4 dark:text-white'>Contactos</li>
+                              <li className='text-lg px-4 dark:text-white'><a onClick={props.handleMenu} href='#Contact'>Contactos</a></li>
                               <hr/>
                               <li className='text-lg px-4 dark:text-white'>Blog</li>
                               <hr/>

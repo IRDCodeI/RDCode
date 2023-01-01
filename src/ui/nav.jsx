@@ -34,10 +34,10 @@ function Nav(){
                     <span className='text-3xl md:ml-3 tex md:text-2xl font-kanit dark:text-white'>RDCode</span></div>
                 <div className='md:w-96'>
                     <ul className="flex flex-row justify-evenly">
-                        <li className='font-kanit text-lg hidden md:inline-block dark:text-white hover:'>Inicio</li>
-                        <li className='font-kanit text-lg hidden md:inline-block dark:text-white'>Habilidades</li>
-                        <li className='font-kanit text-lg hidden md:inline-block dark:text-white'>Contactos</li>
-                        <li className='font-kanit text-lg hidden md:inline-block dark:text-white'>Blog</li>   
+                        <li className='font-kanit text-lg hidden md:inline-block dark:text-white hover:'><a href='#Home'>Inicio</a></li>
+                        <li className='font-kanit text-lg hidden md:inline-block dark:text-white'><a href='#Skills'>Habilidades</a></li>
+                        <li className='font-kanit text-lg hidden md:inline-block dark:text-white'><a href='#Contact'>Contactos</a></li>
+                        <li className='font-kanit text-lg hidden md:inline-block dark:text-white'><a href='#'>Blog</a></li>   
                         <label className="hidden md:inline-flex relative items-center cursor-pointer">
                             <input type="checkbox" value="" className="sr-only peer"/>
                             <div onClick={handleThemeSwitch} 

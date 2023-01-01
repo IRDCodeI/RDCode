@@ -5,7 +5,7 @@ function Header(){
 
     return(
         <>
-            <div className="h-100 md:w-auto md:h-100 bg-hero bg-cover md:bg-no-repeat md:bg-contain lg:bg-cover bg-origin-border bg-fixed bg-bottom">
+            <div id="Home" className="h-100 md:w-auto md:h-100 bg-hero bg-cover md:bg-no-repeat md:bg-contain lg:bg-cover bg-origin-border bg-fixed bg-bottom">
                 <header className="py-4 md:py-8 flex flex-col items-center">
                     <Nav/>
                 </header>
