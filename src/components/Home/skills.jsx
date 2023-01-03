@@ -1,4 +1,22 @@
+import {gsap, ScrollTrigger} from 'gsap/all';
+import { useEffect } from 'react';
+
 function Skills(){
+
+    gsap.registerPlugin(ScrollTrigger)
+
+    useEffect(() => {
+        gsap.to(".skill", {
+            autoAlpha: 1,
+            y: 0,
+            duration: 0.75,
+            stagger: 0.25,
+            scrollTrigger: {
+                trigger: '#Skills'
+            }
+        })
+    }, [])
+
     return(
         <>
             <div id="Skills" className="p-2 md:p-8 bg-gray-100 dark:bg-gray-600 -my-1">
@@ -9,7 +27,7 @@ function Skills(){
                     </div>
                     <div className="grid grid-cols-2 md:grid-cols-4 auto-rows-auto gap-5 place-items-center">
                         <figure>
-                            <div className=" w-32 p-2
+                            <div className="skill w-32 p-2 opacity-0 translate-y-10
                                 bg-white rounded-md bg-clip-padding backdrop-filter backdrop-blur-md bg-opacity-60 border border-gray-100 
                                 ">
                                 <img src="/icons/html.svg"/>
@@ -17,7 +35,7 @@ function Skills(){
                                 <figcaption className="p-2 text-center font-medium text-xl uppercase dark:text-white">Html</figcaption>
                         </figure>
                         <figure>
-                            <div className=" w-32 p-2
+                            <div className="skill w-32 p-2 opacity-0 translate-y-10
                                 bg-white rounded-md bg-clip-padding backdrop-filter backdrop-blur-md bg-opacity-60 border border-gray-100 
                                 ">
                                 <img src="/icons/css.svg"/>
@@ -25,7 +43,7 @@ function Skills(){
                                 <figcaption className="p-2 text-center font-medium text-xl uppercase dark:text-white">Css</figcaption>
                         </figure>
                         <figure>
-                            <div className=" w-32 p-2
+                            <div className="skill w-32 p-2 opacity-0 translate-y-10
                                 bg-white rounded-md bg-clip-padding backdrop-filter backdrop-blur-md bg-opacity-60 border border-gray-100 
                                 ">
                                 <img src="/icons/js.svg"/>
@@ -33,7 +51,7 @@ function Skills(){
                                 <figcaption className="p-2 text-center font-medium text-xl uppercase dark:text-white">Javascript</figcaption>
                         </figure>                        
                         <figure>
-                            <div className=" w-32 p-2
+                            <div className="skill w-32 p-2 opacity-0 translate-y-10
                                 bg-white rounded-md bg-clip-padding backdrop-filter backdrop-blur-md bg-opacity-60 border border-gray-100 
                                 ">
                                 <img src="/icons/python.svg"/>
@@ -41,7 +59,7 @@ function Skills(){
                                 <figcaption className="p-2 text-center font-medium text-xl uppercase dark:text-white">Python</figcaption>
                         </figure>
                         <figure>
-                            <div className=" w-32 p-2
+                            <div className="skill w-32 p-2 opacity-0 translate-y-10
                                 bg-white rounded-md bg-clip-padding backdrop-filter backdrop-blur-md bg-opacity-60 border border-gray-100 
                                 ">
                                 <img src="/icons/react.svg"/>
@@ -49,7 +67,7 @@ function Skills(){
                                 <figcaption className="p-2 text-center font-medium text-xl uppercase dark:text-white">React</figcaption>
                         </figure>
                         <figure>
-                            <div className=" w-32 p-2
+                            <div className="skill w-32 p-2 opacity-0 translate-y-10
                                 bg-white rounded-md bg-clip-padding backdrop-filter backdrop-blur-md bg-opacity-60 border border-gray-100 
                                 ">
                                 <img src="/icons/tailwind.svg"/>
@@ -57,7 +75,7 @@ function Skills(){
                                 <figcaption className="p-2 text-center font-medium text-xl uppercase dark:text-white">Tailwind</figcaption>
                         </figure>
                         <figure>
-                            <div className=" w-32 p-2
+                            <div className="skill w-32 p-2 opacity-0 translate-y-10
                                 bg-white rounded-md bg-clip-padding backdrop-filter backdrop-blur-md bg-opacity-60 border border-gray-100 
                                 ">
                                 <img src="/icons/git.svg"/>
@@ -65,7 +83,7 @@ function Skills(){
                                 <figcaption className="p-2 text-center font-medium text-xl uppercase dark:text-white">Git</figcaption>
                         </figure>
                         <figure>
-                            <div className=" w-32 p-2
+                            <div className="skill w-32 p-2 opacity-0 translate-y-10
                                 bg-white rounded-md bg-clip-padding backdrop-filter backdrop-blur-md bg-opacity-60 border border-gray-100 
                                 ">
                                 <img src="/icons/docker.svg"/>

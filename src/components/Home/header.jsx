@@ -1,4 +1,4 @@
-import gsap from "gsap";
+
 import Nav from "../../ui/nav";
 
 function Header(){

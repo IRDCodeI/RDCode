@@ -32,6 +32,8 @@ function Menu(props){
                               <hr/>
                               <li className='text-lg px-4 dark:text-white'><a onClick={props.handleMenu} href='#Skills'>Habilidades</a></li>
                               <hr/>
+                              <li className='text-lg px-4 dark:text-white'><a onClick={props.handleMenu} href='#'>Proyectos</a></li>
+                              <hr/>
                               <li className='text-lg px-4 dark:text-white'><a onClick={props.handleMenu} href='#Contact'>Contactos</a></li>
                               <hr/>
                               <li className='text-lg px-4 dark:text-white'>Blog</li>

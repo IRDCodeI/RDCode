@@ -1,13 +1,11 @@
 import Menu from './menu'
 import {GiHamburgerMenu} from 'react-icons/gi'
 import {BsLaptop} from 'react-icons/bs'
-import { useState, useEffect, useRef } from 'react';
+import { useState, useEffect } from 'react';
 import {gsap, ScrollTrigger} from 'gsap/all';
 
 
 function Nav(){
-
-    const navRef = useRef(null);
 
     // Almacenar estado de dark-mode en base de datos "Redis" 
     const [theme, setTheme] = useState('light')
@@ -25,7 +23,6 @@ function Nav(){
                 trigger: "#Tt",
                 start: 'top center',
                 end: 'bottom 100px',
-                markers: true,
                 scrub: true
             }
         });
@@ -54,19 +51,20 @@ function Nav(){
                     </div>
                     <span className='text-3xl md:ml-3 tex md:text-2xl font-kanit dark:text-white'>RDCode</span></div>
                 <div className='md:w-96'>
-                    <ul className="flex flex-row justify-evenly">
+                    <ul className="flex flex-row justify-evenly space-x-2.5">
                         <li className='font-kanit text-lg hidden md:inline-block dark:text-white hover:'><a href='#Home'>Inicio</a></li>
                         <li className='font-kanit text-lg hidden md:inline-block dark:text-white'><a href='#Skills'>Habilidades</a></li>
+                        <li className='font-kanit text-lg hidden md:inline-block dark:text-white'><a href='#'>Proyectos</a></li>   
                         <li className='font-kanit text-lg hidden md:inline-block dark:text-white'><a href='#Contact'>Contactos</a></li>
                         <li className='font-kanit text-lg hidden md:inline-block dark:text-white'><a href='#'>Blog</a></li>   
                         <label className="hidden md:inline-flex relative items-center cursor-pointer">
-                            <input type="checkbox" value="" className="sr-only peer"/>
-                            <div onClick={handleThemeSwitch} 
-                            className="hidden md:block w-11 h-6 bg-gray-200
+                            <input onClick={handleThemeSwitch}  type="checkbox" value="" className="sr-only peer"/>
+                            <div
+                            className="hidden md:block w-11 h-6 bg-gray-900
                                 peer-focus:outline-none peer-focus:ring-2 peer-focus:ring-blue-300 dark:peer-focus:ring-slate-300 rounded-full 
                                 peer dark:bg-slate-400 peer-checked:after:translate-x-full peer-checked:after:border-white 
                                 after:content-[''] after:absolute after:top-[4px] after:left-[2px] after:bg-white after:border-gray-300 after:border after:rounded-full after:h-5 after:w-5 after:transition-all
-                                 dark:border-gray-600 peer-checked:bg-gray-900">
+                                 dark:border-gray-600 peer-checked:bg-gray-200">
                             </div>                        
                         </label>                     
                     </ul>                 
