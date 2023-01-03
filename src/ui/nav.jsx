@@ -1,14 +1,35 @@
 import Menu from './menu'
 import {GiHamburgerMenu} from 'react-icons/gi'
 import {BsLaptop} from 'react-icons/bs'
-import { useState } from 'react';
-import { useEffect } from 'react';
+import { useState, useEffect, useRef } from 'react';
+import {gsap, ScrollTrigger} from 'gsap/all';
+
 
 function Nav(){
+
+    const navRef = useRef(null);
 
     // Almacenar estado de dark-mode en base de datos "Redis" 
     const [theme, setTheme] = useState('light')
     const [hidden, setHidden] = useState(false)
+
+    gsap.registerPlugin(ScrollTrigger)
+    //Scrub property
+    useEffect( () => {
+        gsap.to("#Navbar", {
+            width:'97%',
+            top:'0',
+            margin:'5',
+            duration: 1,
+            scrollTrigger: {
+                trigger: "#Tt",
+                start: 'top center',
+                end: 'bottom 100px',
+                markers: true,
+                scrub: true
+            }
+        });
+    },[])
 
     useEffect(
         () => {
@@ -24,7 +45,7 @@ function Nav(){
 
     return(
         <>
-            <nav className="fixed z-10 w-11/12 p-2 md:p-0 md:w-9/12 md:m-4 md:py-3 md:px-12 flex flex-row justify-around space-x-20 md:justify-between items-center
+            <nav id='Navbar' className="fixed z-10 w-11/12 p-2 md:p-0 md:w-9/12 md:m-4 md:py-3 md:px-12 flex flex-row justify-around space-x-20 md:justify-between items-center
                 bg-white rounded-md bg-clip-padding backdrop-filter backdrop-blur-md bg-opacity-60 border border-gray-100 
                 dark:bg-gray-800 dark:border-gray-600">
                 <div className="p-1 justify-between items-center flex flex-row">

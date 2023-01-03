@@ -16,7 +16,7 @@ function Header(){
                             <h2 className="text-red-600 text-5xl md:text-7xl font-semibold text-center md:text-start">Fullstack</h2>
                         </div>
                         <div>
-                            <p className="text-center md:text-start text-white text-2xl md:text-3xl">Programador <b>Frontend</b> y <b>Backend</b></p>
+                            <p  id="Tt" className="text-center md:text-start text-white text-2xl md:text-3xl">Programador <b>Frontend</b> y <b>Backend</b></p>
                         </div>
                     </div>
                     <div className="w-full md:w-96 md:h-96 py-7 px-2 md:py-0 static flex flex-row flex-nowrap space-x-3 overflow-hidden md:block">

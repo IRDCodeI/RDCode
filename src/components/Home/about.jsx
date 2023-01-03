@@ -2,7 +2,7 @@ function About (){
 
     return(
         <>
-            <div className="py-10 md:px-16 md:py-20 flex flex-col space-y-8 md:space-y-0 md:flex-row md:justify-evenly md:items-center bg-slate-100 dark:bg-gray-600">
+            <div id="About" className="py-10 md:px-16 md:py-20 flex flex-col space-y-8 md:space-y-0 md:flex-row md:justify-evenly md:items-center bg-slate-100 dark:bg-gray-600">
                 <div className=" md:my-10 md:mx-28 flex flex-col w-full items-center">
                     <h3 className="w-full md:pl-8 md:mb-5 text-5xl text-center md:text-left font-bold dark:text-white">RDCode</h3>
                     <span className="w-52 m-4 self-start inline-block md:mb-20 md:w-60 h-1 bg-gradient-to-r from-gray-900 to-transparent
