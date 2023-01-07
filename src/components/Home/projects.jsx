@@ -1,9 +1,9 @@
-function Blog(){
+function Projects(){
     return(
         <>
-            <div className="p-14 bg-slate-100 dark:bg-gray-600">
+            <div id="Projects" className="p-14 bg-slate-100 dark:bg-gray-600">
                 <div className="flex flex-col">
-                    <h3 className="text-5xl font-bold dark:text-white">Blog</h3>
+                    <h3 className="text-5xl font-bold dark:text-white">Proyectos</h3>
                     <span className="w-64 h-1 mt-5 bg-gradient-to-r from-gray-900 to-transparent dark:bg-gradient-to-r dark:from-slate-100"></span>
                 </div>
                 <div className="m-5 p-2 w-auto md:m-10 md:p-5 flex flex-row justify-around">
@@ -50,4 +50,4 @@ function Blog(){
     )
 }
 
-export default Blog;
+export default Projects;

@@ -15,14 +15,14 @@ function Footer(){
                     </div>
                     <div className='w-20 md:w-96 bg-white h-px'></div>
                 </div>
-                <div className='md:my-6 flex flex-col items-center'>
+                <div className='md:py-8 flex flex-col items-center'>
                     <div className='flex flex-row items-center'>
                         <BsLaptop color='white'fontSize={'2.5rem'}/>
                         <p className='ml-5 text-white text-4xl font-semibold'>RDCODE</p>
                     </div>
                     <p className='text-white text-sm'>©2022 Stalin David Pillajo Masache</p>
                 </div>
-                <div className='py-10 md:py-6 flex flex-row justify-center'>
+                <div className='hidden py-10 md:py-6 flex-row justify-center'>
                     <span className='text-center text-xs md:text-base text-white font-semibold'>Informacion Legal</span>
                     <div className='w-px h-6 bg-white mx-4'></div>
                     <span className='text-center text-xs md:text-base text-white font-semibold'>Politica de Privacidad</span>

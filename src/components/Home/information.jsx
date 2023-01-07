@@ -1,5 +1,5 @@
 import About from "./about";
-import Blog from "./blog";
+import Projects from "./projects";
 import Skills from "./skills";
 
 
@@ -9,7 +9,7 @@ function Information(){
             <div className="block bg-slate-100">
                 <About/>
                 <Skills/>
-                <Blog/>
+                <Projects/>
             </div>
         </>
     )

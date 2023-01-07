@@ -54,9 +54,8 @@ function Nav(){
                     <ul className="flex flex-row justify-evenly space-x-2.5">
                         <li className='font-kanit text-lg hidden md:inline-block dark:text-white hover:'><a href='#Home'>Inicio</a></li>
                         <li className='font-kanit text-lg hidden md:inline-block dark:text-white'><a href='#Skills'>Habilidades</a></li>
-                        <li className='font-kanit text-lg hidden md:inline-block dark:text-white'><a href='#'>Proyectos</a></li>   
+                        <li className='font-kanit text-lg hidden md:inline-block dark:text-white'><a href='#Projects'>Proyectos</a></li>   
                         <li className='font-kanit text-lg hidden md:inline-block dark:text-white'><a href='#Contact'>Contactos</a></li>
-                        <li className='font-kanit text-lg hidden md:inline-block dark:text-white'><a href='#'>Blog</a></li>   
                         <label className="hidden md:inline-flex relative items-center cursor-pointer">
                             <input onClick={handleThemeSwitch}  type="checkbox" value="" className="sr-only peer"/>
                             <div
